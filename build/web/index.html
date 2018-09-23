@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>First Crud Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Create Entry in Database</div>
+        <form action="SaveServlet" method="post">
+        <table>
+            <tr><td>Name :</td><td> <input type="text" name="name" required></td></tr>
+            <tr><td>Email :</td><td> <input type="email" name="email" required></td></tr>
+            <tr><td>Password :</td><td> <input type="password" name="password" required></td></tr>
+            <tr><td>Country :</td><td>  
+                <select name="country" style="width:150px">  
+                <option>India</option>  
+                <option>USA</option>  
+                <option>UK</option>  
+                <option>Other</option>  
+                </select>  
+                </td>
+             </tr>
+            
+            <tr><td><input type="submit" value="Save"></td></tr>
+            
+           <br />
+           <a href="ViewServlet">View Employee</a>
+        </table>
+        </form>
+    </body>
+</html>
